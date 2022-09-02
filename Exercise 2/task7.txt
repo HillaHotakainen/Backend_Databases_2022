@@ -1,0 +1,3 @@
+Explain the difference between INNER JOIN, LEFT (OUTER) JOIN and RIGHT (OUTER) JOIN.
+
+Selitä INNER JOIN:n, LEFT (OUTER) JOIN:n ja RIGHT (OUTER) JOIN:n ero.
