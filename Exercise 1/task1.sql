@@ -7,3 +7,7 @@ Hae nimi ja pituus kappaleille, joiden pituus on vähemmän kuin minuutti.
 Järjestä tulosjoukko ensisijaisesti nimen perusteella nousevaan järjestykseen
 ja toissijaisesti pituuden perusteella laskevaan järjestykseen.
 */
+SELECT name, length
+FROM track
+WHERE length < '00:01:00'
+order by  name asc, length desc;
