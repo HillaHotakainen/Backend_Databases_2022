@@ -7,3 +7,7 @@ Hae albumien ja kappaleiden tiedot artistille "Iron Maiden".
 Ota tulosjoukkoon mukaan albumin nimi, albumin julkaisuvuosi, kappaleen nimi ja kappaleen pituus.
 Järjestä tulosjoukko ensisijaisesti albumin nimen ja toissijaisesti kappaleen numeron mukaan.
 */
+SELECT album.name, album.year, track.name, track.track_number, track.length
+FROM album, track
+WHERE album.artist_id = 1 and track.album_id = album.id
+order by album.name, track.track_number;

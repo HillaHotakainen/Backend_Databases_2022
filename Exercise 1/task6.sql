@@ -14,5 +14,6 @@ CREATE TABLE review(
 	name VARCHAR(255) NOT NULL,
     headline VARCHAR(255) NOT NULL,
     reviewtext VARCHAR(2000) NOT NULL,
-    reviewdID INT NOT NULL
+    reviewdID INT NOT NULL,
+    foreign key(reviewdID) references album(id)
 );
