@@ -6,3 +6,4 @@ Hae kaikki kappaleet, joiden pituus in vähemmän kuin yhden minuutin tai enemm�
 SELECT name, length
 FROM track
 WHERE length < '00:01:00' OR length > '00:05:00';
+

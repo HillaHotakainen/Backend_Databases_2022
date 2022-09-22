@@ -7,3 +7,6 @@ Hae artistien nimi ja kaikki artistin albumit. Älä sisällytä tulosjoukkoon n
 joille ei ole asetettu artistia.
 Ota tulokseen mukaan artistin nimi, albumin nimi ja julkaisuvuosi.
 */
+select artist.name, album.name, album.year
+from artist
+inner join album on artist.id = album.artist_id

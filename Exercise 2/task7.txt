@@ -1,3 +1,7 @@
 Explain the difference between INNER JOIN, LEFT (OUTER) JOIN and RIGHT (OUTER) JOIN.
 
 Selitä INNER JOIN:n, LEFT (OUTER) JOIN:n ja RIGHT (OUTER) JOIN:n ero.
+
+Inner join ottaa mukaan kaikki rivit molemmista tauluista, kunhan sarakkeiden välillä on vastaavuus.
+left join ottaa mukaan kaikki rivit vasemmalla olevasta taulusta, sekä vastaavat tiedot oikean puoleisesta taulukosta
+right join palauttaa kaikki rivit oikealla olevasta taulukosta ja vastaavat tiedot vasemman puoleisesta taulukosta
