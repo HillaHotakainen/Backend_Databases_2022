@@ -10,3 +10,7 @@ Tutki näiden taulujen rakennetta ja kirjoita kysely, joka palauttaa kaikki tila
 Sisällytä asiakkaan etu- ja sukunimi, yritys ja tilauksen toimituspäivämäärä tulokseen. Sisällytä
 tulokseen myös ne tilaukset, joita ei ole vielä toimitettu.
 */
+select customers.first_name, customers.last_name, customers.company, orders.shipped_date
+from orders
+left join customers on customers.id = orders.customer_id;
+

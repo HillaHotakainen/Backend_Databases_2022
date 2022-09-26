@@ -13,3 +13,8 @@ Sisällytä tulokseen myytyjen tilausten määrä, työntekijän nimi ja titteli
 Järjestä tilaukset myytyjen tilausten määrän mukaan laskevaan järjestykseen.
 Älä sisällytä tulokseen työntekijöitä, jotka eivät ole myyneet mitään.
 */
+select count(orders.id) as sales, employees.first_name, employees.last_name, employees.job_title
+from orders
+left join employees on orders.employee_id = employees.id
+group by employees.first_name, employees.last_name, employees.job_title
+order by sales desc;

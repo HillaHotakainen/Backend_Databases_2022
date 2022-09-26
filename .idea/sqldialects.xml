@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="SqlDialectMappings">
+    <file url="file://$PROJECT_DIR$/../../../Program Files/MariaDB 10.6/mywind/northwind-data.sql" dialect="MariaDB" />
+    <file url="file://$PROJECT_DIR$/../../../Program Files/MariaDB 10.6/mywind/northwind-default-current-timestamp.sql" dialect="MariaDB" />
     <file url="file://$PROJECT_DIR$/Exercise 1/task1.sql" dialect="MariaDB" />
     <file url="file://$PROJECT_DIR$/Exercise 2/task2.sql" dialect="MariaDB" />
   </component>

@@ -8,3 +8,7 @@ Northwind-yrityksellä on useita tuotteita myynnissä. Selvitä kuinka moneen ti
 mikäkin tuote liittyy. Kirjoita lause, joka listaa kaikki yrityksen tuotteet (tuotteen nimi) 
 ja tilausten määrä. Listaa myös ne tuotteet, jotka eivät liity mihinkään tilaukseen.
 */
+select count(order_details.product_id) as orders, products.product_name
+from products
+left join order_details on products.id = order_details.product_id
+group by products.product_name
