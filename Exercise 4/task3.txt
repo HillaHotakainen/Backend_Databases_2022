@@ -7,3 +7,4 @@ Suunnittele tietokanta blogille. Kannassa pitää olla taulut blogikirjoituksill
 Keksi sopivat sarakkeet tauluille ja määritä niiden tyypit ja attribuutit. Huolehdi, että suunniteltu kanta 
 on 3. normaalimuodossa. Esitä suunnitelmassa taulut ja niiden väliset yhteydet. Voit piirtää suunnitelman 
 esim. diagrams.net-sovelluksella. Palauta kuva kannan suunnitelmasta (.jpg tai .png muodossa).
+

@@ -28,3 +28,31 @@ Kun ingredient_id tai product_id päivitetään, päivitetään muuttunut arvo m
 Kun Ingredient poistetaan, poisto-operaatio estetään, jos on olemassa jokin tuote, johon on käytetty poistettavaa
 ainesosaa. Kun tuote poistetaan, product_id Contains-taulussa asetetaan arvoon NULL.
 */
+DROP DATABASE IF EXISTS Products;
+CREATE DATABASE Products;
+USE Products;
+
+CREATE TABLE Product (
+    id INT NOT NULL AUTO_INCREMENT,
+    name VARCHAR(300) NOT NULL UNIQUE,
+    PRIMARY KEY (id)
+);
+
+CREATE TABLE Ingredient (
+    id INT NOT NULL AUTO_INCREMENT,
+    name VARCHAR(300) NOT NULL UNIQUE,
+    calories DECIMAL(25, 4),
+    PRIMARY KEY (id)
+);
+
+CREATE TABLE Contains (
+    ingredient_int INT NOT NULL,
+    product_int INT,
+    amount DECIMAL(10,2),
+    FOREIGN KEY (ingredient_int)
+    REFERENCES Ingredient(id),
+    constraint fk_product_id
+        FOREIGN KEY (product_int)
+        REFERENCES Product(id)
+        on delete set null
+);
