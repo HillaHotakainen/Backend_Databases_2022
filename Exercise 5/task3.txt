@@ -5,3 +5,13 @@ Explain how to disable remote login from root user.
 Selitä mitä erityistä tietokannan käyttäjässä root on. Miksi käyttäjällä root tulee olla vahva salasana?
 Miksi etäkirjautuminen root-käyttäjällä tulisi olla estetty?
 Selitä, miten root-käyttäjän etäkirjautuminen voidaan estää (muuten kuin asentimen kautta).
+
+
+Root on käyttäjä jolla on oikeudet tehdä mitä tahansa tietokannalle.
+Käyttäjällä root tulisi olla vahva salasana jotta ulkopuoliset eivät pääsisi käsiksi tietokantaan ja esimerkiksi sabotoimaan sitä.
+Etäkirjautuminen tulisi olla estetty root käyttäjällä tietoturvasyistä, jotta tietokantaan ei pääsisi kirjautumaan
+ulkopuolelta esim internetin kautta.
+
+etäkirjautuminen voidaan estää:
+DELETE FROM mysql.user WHERE User='root' AND Host NOT IN ('localhost', '127.0.0.1', '::1');
+FLUSH PRIVILEGES;
